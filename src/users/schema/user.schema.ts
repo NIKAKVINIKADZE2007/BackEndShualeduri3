@@ -12,7 +12,7 @@ export class User {
   @Prop({ type: String })
   email: string;
 
-  @Prop({ type: Number })
+  @Prop({ type: Number, index:true })
   age: number;
 
   @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: 'expense', default: [] })
